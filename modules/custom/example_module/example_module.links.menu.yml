@@ -1,0 +1,8 @@
+example_module.example_page:
+  title: 'Example Page'
+  description: 'A link to the example page provided by Example Module.'
+  route_name: example_module.example_page
+  # parent: system.admin_structure
+  weight: 7
+  menu_name: main
+  

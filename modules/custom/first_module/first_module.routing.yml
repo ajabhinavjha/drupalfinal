@@ -1,0 +1,62 @@
+# first_module.createForm:
+#   path: '/create-form'
+#   defaults:
+#     _controller: '\Drupal\first_module\Controller\FirstModuleController::createForm'
+#     _title: 'First Page'
+#   requirements:
+#     _permission: 'access content'
+    
+# first_module.information:
+#   path: '/information'
+#   defaults:
+#     _controller: '\Drupal\first_module\Controller\FirstModuleController::informationpage'
+#     _title: 'Information'
+#   requirements:
+#     _permission: 'access content'
+
+first_module.getFirstlist:
+  path: '/first-list'
+  defaults:
+    _controller: '\Drupal\first_module\Controller\FirstModuleController::getFirstlist'
+    _title: ''
+  requirements:
+    _permission: 'access content'
+
+first_module.editFirst:
+  path: '/edit-first/{id}'
+  defaults:
+    _form: '\Drupal\first_module\Form\EditFirst'
+    _title: 'EditFirst'
+  requirements:
+    _permission: 'access content'
+first_module.deleteFirst:
+  path: '/delete-first/{id}'
+  defaults:
+    _controller: '\Drupal\first_module\Controller\FirstModuleController::deleteFirst'
+    _title: 'DeleteFirst'
+  requirements:
+    _permission: 'access content'
+
+first_module.getFirstListApi:
+  path: '/api/first-list'
+  defaults:
+    _controller: '\Drupal\first_module\Controller\FirstModuleController::getFirstListApi'
+    _title: 'First List API'
+  requirements:
+    _permission: 'access content'
+    _access: 'TRUE'
+  methods: ['GET']
+  _format: 'json'
+
+
+first_module.createNode:
+  path: '/api/create-node'
+  defaults:
+    _controller: '\Drupal\first_module\Controller\FirstModuleController::createNode'
+    _title: 'Create Node'
+  requirements:
+    _permission: 'access content'
+  methods: ['POST']
+  options:
+    _auth: ['basic_auth']
+

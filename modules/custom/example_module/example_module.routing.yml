@@ -1,0 +1,8 @@
+example_module.example_page:
+  path: '/example-page'
+  defaults:
+    _controller: '\Drupal\example_module\Controller\ExampleController::examplePage'
+    _title: 'Example Page'
+  requirements:
+    _permission: 'example'
+    

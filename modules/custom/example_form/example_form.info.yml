@@ -1,0 +1,7 @@
+name: 'Example Form'
+type: module
+description: 'A custom form with fields dynamically loaded from a content type.'
+core_version_requirement: ^9 || ^10
+package: Custom
+dependencies:
+  - drupal:node

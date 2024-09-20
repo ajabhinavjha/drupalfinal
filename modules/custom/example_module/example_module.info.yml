@@ -1,0 +1,8 @@
+name: 'Example Module'
+type: module
+description: 'A custom module to demonstrate how to create a Drupal module.'
+core_version_requirement: ^9 || ^10
+package: Custom
+version: 1.0
+dependencies:
+  - drupal:node

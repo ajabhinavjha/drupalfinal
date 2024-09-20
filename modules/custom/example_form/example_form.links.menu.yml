@@ -1,0 +1,9 @@
+example_form.content_type_form:
+  title: 'Example Form'
+  description: 'A link to the example page provided by Example Module.'
+  route_name: example_form.content_type_form
+
+  # parent: system.admin_structure
+  weight: 8
+  menu_name: main
+  

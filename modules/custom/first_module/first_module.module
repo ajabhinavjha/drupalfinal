@@ -1,0 +1,12 @@
+<?php
+
+    function first_module_theme(){
+        return array(
+            'first_module' => array(
+                'variables'=>array(
+                    'items'=>[],
+                    'title'=>''
+                )
+            )
+        );
+    }

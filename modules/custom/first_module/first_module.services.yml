@@ -1,0 +1,10 @@
+services:
+  first_module.name_validator:
+    class: Drupal\first_module\Service\NameValidator
+
+  first_module.email_validator:
+    class: Drupal\first_module\Service\EmailValidator
+
+  first_module.node_retrieval_service:
+    class: Drupal\first_module\Service\NodeRetrievalService
+    arguments: ['@entity_type.manager']

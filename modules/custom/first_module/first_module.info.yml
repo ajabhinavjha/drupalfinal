@@ -1,0 +1,8 @@
+name: First Module
+type: module
+description:
+core_version_requirement: ^9 || ^10
+package: Custom
+version: 1.0
+dependencies:
+  - drupal:node
